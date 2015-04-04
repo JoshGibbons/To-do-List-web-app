@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!-- TODO
+			
+-->
+<head>
+	<title>To-Do List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<h1>To-Do List</h1>
+
+	<form name="inputForm" id="inputForm" onsubmit="return addTask(this)" >
+
+		<input class="textbox" type="text" form_id="inputForm" placeholder="  To-do" autofocus id="inputTaskBox" >
+
+		<input class="button_ADD" type="button" form_id="inputForm" name="addBtn" value="ADD" onclick="addTask(this.form)">
+
+	</form>
+	<div class = "boxDiv">
+		Tasks:
+		<input class="button_deleteChecked" type="button" id="deleteAllBttn" onclick="deleteChecked()" value="drop checked">
+		<ul id="taskList">
+		</ul>	
+	</div>
+</body>
+</hmtl>
